@@ -241,3 +241,13 @@ a:hover{ color:#fff; text-shadow:0 0 10px var(--pink); }
   z-index: 5; /* avatar na wierzchu */
   margin-top: -50px; /* ile ma nachodzić na baner */
 }
+.banner{
+  margin-top: -60px;
+  position: relative;
+  z-index: 1;
+}
+
+.avatar{
+  position: relative;
+  z-index: 5;
+}
