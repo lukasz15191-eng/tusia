@@ -1,144 +1,35 @@
-:root{
-  --bg:#05040a;
-  --card:#0c0a18cc;
-  --text:#ffe9fb;
-  --muted:#c9a7d9;
-  --pink:#ff2f8d;
-  --pink-2:#ff5fb6;
-  --red:#ff2b4f;
-  --violet:#9a60ff;
-}
+/* ULTRA-KOMPATYBILNY, BEZ ZMIENNYCH I PSEUDO-ELEMENTÓW */
+body{margin:0;background:#0a0714;font-family:Arial,Helvetica,sans-serif;color:#ffe9fb}
+.box{width:680px;max-width:calc(100% - 24px);margin:40px auto;padding:20px;border-radius:20px;background:#0c0a18;box-shadow:0 0 20px rgba(255,47,141,.3);position:relative}
 
-/* Global */
-body{
-  margin:0;
-  background: #0a0714;
-  font-family:"Poppins",sans-serif;
-  color:var(--text);
-  letter-spacing:.3px;
-}
+/* AVATAR NAD BANEREM */
+.avatar{width:120px;height:120px;border-radius:26px;object-fit:cover;position:absolute;left:50%;transform:translateX(-50%);top:-60px;z-index:10;border:2px solid rgba(255,255,255,.15);outline:3px solid #ff2f8d;box-shadow:0 0 16px rgba(255,47,141,.9)}
 
-/* Box 10% smaller than before */
-.profile-box{
-  width: 680px; /* było ~760px */
-  margin: 40px auto;
-  padding: 20px;
-  border-radius: 22px;
-  background: var(--card);
-  box-shadow:0 0 26px #ff2f8d40;
-  position:relative;
-}
+/* BANNER – JEDEN */
+.banner{width:100%;height:220px;border-radius:20px;margin-top:80px;box-shadow:0 0 18px rgba(255,47,141,.5);background:linear-gradient(180deg,#1b1034 0%,#0b0a17 70%)}
 
-/* Avatar over banner */
-.avatar{
-  width:120px; height:120px;
-  border-radius:28px;
-  object-fit:cover;
-  position:absolute;
-  left:50%; transform:translateX(-50%);
-  top:-60px;
-  z-index:10;
-  border:2px solid #ffffff22;
-  outline:3px solid var(--pink);
-  box-shadow:0 0 16px #ff2f8d;
-}
+/* TYTUŁ */
+.title{margin:18px 0 4px;text-align:center;font-size:28px;font-weight:700;color:#ffd2ea}
+.heart{color:#ff2b4f}
+.subtitle{text-align:center;opacity:.85;font-size:14px;margin-bottom:12px}
 
-/* Banner */
-.banner{
-  width:100%;
-  height:230px;
-  border-radius:22px;
-  margin-top:80px;
-  box-shadow:0 0 22px #ff2f8d55;
-  position:relative;
-  background:
-    radial-gradient(at 80% 0%, #30144f66 0%, transparent 40%),
-    linear-gradient(180deg,#1b1034,#0b0a17);
-}
+/* OPIS */
+.about{text-align:center;line-height:1.5;margin:0 16px 14px}
 
-/* Title */
-.title{
-  text-align:center;
-  font-size:28px;
-  font-weight:700;
-  margin-top:20px;
-  color:#ffd2ea;
-}
-.title .heart{
-  color:var(--red);
-  text-shadow:0 0 8px var(--red);
-}
+/* MUZYKA */
+.music{background:#1d0c29;border-radius:14px;height:52px;line-height:52px;text-align:center;font-size:14px;margin:12px 0}
 
-/* Subtitle */
-.subtitle{
-  font-size:14px;
-  opacity:.8;
-  text-align:center;
-  margin-bottom:15px;
-}
+/* NAGŁÓWKI SEKCJI */
+.st{text-align:center;margin:18px 0 8px}
 
-/* About text */
-.about{
-  text-align:center;
-  line-height:1.5;
-  margin:0 20px;
-}
+/* FRIENDS */
+.friends{text-align:center}
+.friend{display:inline-block;width:88px;height:88px;border-radius:22px;background:#120e1f;background-size:cover;background-position:center;margin:6px;box-shadow:0 0 12px rgba(154,96,255,.45)}
 
-/* Music */
-.music-box{
-  background:#1d0c29;
-  border-radius:16px;
-  height:55px;
-  margin:18px 0;
-  line-height:55px;
-  text-align:center;
-  font-size:14px;
-}
+/* GALERIA */
+.gallery{text-align:center}
+.gallery img{width:130px;height:130px;object-fit:cover;border-radius:22px;margin:6px;box-shadow:0 0 12px rgba(154,96,255,.45)}
 
-/* Sections */
-.section-title{
-  text-align:center;
-  margin-top:20px;
-}
-
-/* Friends */
-.friends{
-  text-align:center;
-}
-.friend{
-  display:inline-block;
-  width:88px; height:88px;
-  border-radius:22px;
-  background-size:cover;
-  background-position:center;
-  margin:6px;
-  box-shadow:0 0 14px #9a60ff55;
-}
-
-/* Gallery */
-.gallery{
-  text-align:center;
-  margin-top:10px;
-}
-.gallery img{
-  width:130px; height:130px;
-  object-fit:cover;
-  margin:6px;
-  border-radius:22px;
-  box-shadow:0 0 14px #9a60ff55;
-}
-
-/* Social icons */
-.social-icons{
-  text-align:center;
-  margin-top:10px;
-}
-.social-icons a{
-  display:inline-block;
-  width:40px; height:40px;
-  background:#180c20;
-  border-radius:50%;
-  line-height:40px;
-  color:var(--pink-2);
-  margin:0 6px;
-}
+/* SOCIALS */
+.socials{text-align:center;margin:10px 0 0}
+.socials a{display:inline-block;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;background:#180c20;color:#ff9fd0;margin:0 6px;text-decoration:none}
