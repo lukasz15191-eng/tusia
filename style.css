@@ -1,35 +1,132 @@
-/* ULTRA-KOMPATYBILNY, BEZ ZMIENNYCH I PSEUDO-ELEMENTÓW */
-body{margin:0;background:#0a0714;font-family:Arial,Helvetica,sans-serif;color:#ffe9fb}
-.box{width:680px;max-width:calc(100% - 24px);margin:40px auto;padding:20px;border-radius:20px;background:#0c0a18;box-shadow:0 0 20px rgba(255,47,141,.3);position:relative}
+body{
+  margin:0;
+  background:#030208;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#ffe9fb;
+}
 
-/* AVATAR NAD BANEREM */
-.avatar{width:120px;height:120px;border-radius:26px;object-fit:cover;position:absolute;left:50%;transform:translateX(-50%);top:-60px;z-index:10;border:2px solid rgba(255,255,255,.15);outline:3px solid #ff2f8d;box-shadow:0 0 16px rgba(255,47,141,.9)}
+.profile-box{
+  width:700px;
+  max-width:95%;
+  margin:80px auto 60px;
+  padding:20px;
+  background:#0c0a18;
+  border-radius:22px;
+  box-shadow:0 0 28px rgba(255, 47, 141, .4);
+  position:relative;
+}
 
-/* BANNER – JEDEN */
-.banner{width:100%;height:220px;border-radius:20px;margin-top:80px;box-shadow:0 0 18px rgba(255,47,141,.5);background:linear-gradient(180deg,#1b1034 0%,#0b0a17 70%)}
+/* Avatar */
+.avatar{
+  width:130px; height:130px;
+  border-radius:30px;
+  object-fit:cover;
+  position:absolute;
+  top:-65px;
+  left:50%;
+  transform:translateX(-50%);
+  border:3px solid #ff2f8d;
+  box-shadow:0 0 22px #ff2f8d;
+  z-index:10;
+}
 
-/* TYTUŁ */
-.title{margin:18px 0 4px;text-align:center;font-size:28px;font-weight:700;color:#ffd2ea}
-.heart{color:#ff2b4f}
-.subtitle{text-align:center;opacity:.85;font-size:14px;margin-bottom:12px}
+/* Banner */
+.banner{
+  width:100%;
+  height:240px;
+  border-radius:20px;
+  margin-top:60px;
+  background:
+    radial-gradient(circle at 60% 10%, rgba(255,47,141,.4), transparent 60%),
+    radial-gradient(circle at 20% 70%, rgba(154,96,255,.35), transparent 65%),
+    linear-gradient(#1b1034, #0b0a17);
+  box-shadow:0 0 25px rgba(255,47,141,.5);
+}
 
-/* OPIS */
-.about{text-align:center;line-height:1.5;margin:0 16px 14px}
+/* Title */
+.title{
+  text-align:center;
+  font-size:30px;
+  margin-top:25px;
+  font-weight:700;
+  color:#ffb3d9;
+}
+.heart{
+  color:#ff2b4f;
+  text-shadow:0 0 12px #ff2b4f;
+}
 
-/* MUZYKA */
-.music{background:#1d0c29;border-radius:14px;height:52px;line-height:52px;text-align:center;font-size:14px;margin:12px 0}
+.subtitle{
+  text-align:center;
+  opacity:.8;
+  margin-bottom:16px;
+}
 
-/* NAGŁÓWKI SEKCJI */
-.st{text-align:center;margin:18px 0 8px}
+/* About */
+.about{
+  text-align:center;
+  line-height:1.5;
+  margin:0 20px 22px;
+  color:#ffffff;
+}
 
-/* FRIENDS */
-.friends{text-align:center}
-.friend{display:inline-block;width:88px;height:88px;border-radius:22px;background:#120e1f;background-size:cover;background-position:center;margin:6px;box-shadow:0 0 12px rgba(154,96,255,.45)}
+/* Music */
+.music{
+  background:#1d0c29;
+  border-radius:16px;
+  height:60px;
+  line-height:60px;
+  text-align:center;
+  margin-bottom:20px;
+  box-shadow:0 0 16px rgba(154,96,255,.4);
+}
 
-/* GALERIA */
-.gallery{text-align:center}
-.gallery img{width:130px;height:130px;object-fit:cover;border-radius:22px;margin:6px;box-shadow:0 0 12px rgba(154,96,255,.45)}
+/* Sections */
+.section-title{
+  text-align:center;
+  margin:22px 0 10px;
+}
 
-/* SOCIALS */
-.socials{text-align:center;margin:10px 0 0}
-.socials a{display:inline-block;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;background:#180c20;color:#ff9fd0;margin:0 6px;text-decoration:none}
+/* Friends */
+.friends{
+  text-align:center;
+  margin-bottom:20px;
+}
+.friend{
+  display:inline-block;
+  width:90px; height:90px;
+  background-size:cover;
+  background-position:center;
+  border-radius:22px;
+  margin:6px;
+  box-shadow:0 0 14px rgba(154,96,255,.45);
+}
+
+/* Gallery */
+.gallery{
+  text-align:center;
+  margin-bottom:20px;
+}
+.gallery img{
+  width:132px; height:132px;
+  object-fit:cover;
+  border-radius:22px;
+  margin:6px;
+  box-shadow:0 0 14px rgba(154,96,255,.45);
+}
+
+/* Socials */
+.socials{
+  text-align:center;
+  margin-top:10px;
+}
+.socials a{
+  display:inline-block;
+  width:40px; height:40px;
+  line-height:40px;
+  border-radius:50%;
+  background:#180c20;
+  color:#ff9fd0;
+  margin:0 6px;
+  text-decoration:none;
+}
